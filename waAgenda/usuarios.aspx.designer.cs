@@ -11,16 +11,25 @@ namespace waAgenda
 {
 
 
-    public partial class index
+    public partial class usuarios
     {
 
         /// <summary>
-        /// Controle Image1.
+        /// Controle ListView1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.ListView ListView1;
+
+        /// <summary>
+        /// Controle SqlDataSourceUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceUsuario;
     }
 }
