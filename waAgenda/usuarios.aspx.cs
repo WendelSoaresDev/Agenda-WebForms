@@ -18,5 +18,38 @@ namespace waAgenda
         {
 
         }
+
+        protected void SqlDataSourceUsuario_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void SqlDataSourceUsuario_Inserting(object sender, SqlDataSourceCommandEventArgs e)
+        {
+
+        }
+
+        protected void SqlDataSourceUsuario_Inserted(object sender, SqlDataSourceStatusEventArgs e)
+        {
+            if (e.Exception != null)
+            {
+                iMsg.Text = "Inserindo um registro que já existe no banco de dados ou com campo(s) em branco!";
+                e.ExceptionHandled = true;
+            }
+        }
+
+        protected void SqlDataSourceUsuario_Selecting1(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void SqlDataSourceUsuario_Updated(object sender, SqlDataSourceStatusEventArgs e)
+        {
+            if (e.Exception != null)
+            {
+                iMsg.Text = "Alterando um registro sem informar todos os campos!";
+                e.ExceptionHandled = true;
+            }
+        }
     }
 }
