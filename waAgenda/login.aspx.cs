@@ -37,12 +37,17 @@ namespace waAgenda
             SqlDataReader registro = cmd.ExecuteReader();
             if (registro.HasRows)
             {
+                //Cookie
+                HttpCookie login = new HttpCookie("login", txbEmail.Text);
+                Response.Cookies.Add(login);
+                
                 //direcionar para a pagina principal
                 Response.Redirect("~/index.aspx");
             }
             else
             {
-                iMsg.Text = "email ou senha incorretos!!!";
+                Response.Write("<script>alert('email ou senha incorretos!!!');</script>");
+               // iMsg.Text = "";
             }
             
 

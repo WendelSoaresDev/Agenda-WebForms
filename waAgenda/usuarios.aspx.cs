@@ -33,7 +33,8 @@ namespace waAgenda
         {
             if (e.Exception != null)
             {
-                iMsg.Text = "Inserindo um registro que já existe no banco de dados ou com campo(s) em branco!";
+                Response.Write("<script>alert('Inserindo um registro que já existe no banco de dados ou com campo(s) em branco!'); </script>");
+               // iMsg.Text = "";
                 e.ExceptionHandled = true;
             }
         }
@@ -47,7 +48,7 @@ namespace waAgenda
         {
             if (e.Exception != null)
             {
-                iMsg.Text = "Alterando um registro sem informar todos os campos!";
+                Response.Write("<script>alert('Alterando o registro sem informar todos os campos'); </script>");
                 e.ExceptionHandled = true;
             }
         }

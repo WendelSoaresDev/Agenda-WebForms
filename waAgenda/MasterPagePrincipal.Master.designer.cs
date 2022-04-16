@@ -11,7 +11,7 @@ namespace waAgenda
 {
 
 
-    public partial class PasterPagePrincipal
+    public partial class MasterPagePrincipal
     {
 
         /// <summary>

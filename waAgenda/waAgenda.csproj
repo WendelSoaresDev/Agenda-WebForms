@@ -100,12 +100,12 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PasterPagePrincipal.Master.cs">
-      <DependentUpon>PasterPagePrincipal.Master</DependentUpon>
+    <Compile Include="MasterPagePrincipal.Master.cs">
+      <DependentUpon>MasterPagePrincipal.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PasterPagePrincipal.Master.designer.cs">
-      <DependentUpon>PasterPagePrincipal.Master</DependentUpon>
+    <Compile Include="MasterPagePrincipal.Master.designer.cs">
+      <DependentUpon>MasterPagePrincipal.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="usuarios.aspx.cs">
@@ -118,7 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="PasterPagePrincipal.Master" />
+    <Content Include="MasterPagePrincipal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
